@@ -6,7 +6,7 @@ import ToolInput from 'components/Tool/ToolInput';
 const FormData = [
   {
     id: 'quantity',
-    label: 'Usurp Fee (in EOS)',
+    label: 'Usurp Fee (in WBI)',
     placeholder: 'How much?',
   },
   {

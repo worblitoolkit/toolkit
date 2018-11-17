@@ -108,7 +108,7 @@ const ForumProposeForm = props => {
       </ToolSection>
       <ToolSection lg={4}>
         <ToolBody color="info" header="Tutorial">
-          <h5>EOSIO Forum Vote</h5>
+          <h5>WBIIO Forum Vote</h5>
           <p>This is part of the eosio.forum Referendum project.</p>
           <p>
             You can create a Referundum. You must provide the Proposer account name and Proposal name to others so they

@@ -47,10 +47,7 @@ const VoteUs = props => {
   };
   return (
     <React.Fragment>
-      <a href="#" onClick={handleSubmit} className={className}>
         Built by GenerEOS
-      </a>
-      <Button type="submit" color="success" onClick={handleSubmit} style={{marginTop:'-7px',marginLeft:'10px'}}>Vote</Button>
     </React.Fragment>
   );
 };

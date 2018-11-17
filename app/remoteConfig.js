@@ -1,5 +1,5 @@
 //
-// Provide a list of EOS tokens that are available
+// Provide a list of WBI tokens that are available
 //
 
 const airgrabs = [
@@ -28,7 +28,7 @@ const airgrabs = [
     symbol: 'POOR',
     account: 'poormantoken',
     method: 'signup',
-    description: 'A reward for people who STAKE and VOTE for EOS Block Producers with MONTHLY drops.',
+    description: 'A reward for people who STAKE and VOTE for WBI Block Producers with MONTHLY drops.',
     url: 'https://eostoolkit.io/airgrab',
   },
   {
@@ -49,7 +49,7 @@ const airgrabs = [
     symbol: 'WIZZ',
     account: 'wizznetwork1',
     method: 'signup',
-    description: 'Modern Decentralized Ecosystem, Built on EOSIO. Tools, Rewards, Chat, and more. AIGRAB NOW!',
+    description: 'Modern Decentralized Ecosystem, Built on WBIIO. Tools, Rewards, Chat, and more. AIGRAB NOW!',
     url: 'https://wizz.network',
   },
 ];

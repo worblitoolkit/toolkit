@@ -31,7 +31,7 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://github.com/generEOS" className={block}>
+              <a href="https://github.com/generWBI" className={block}>
                 {'GitHub'}
               </a>
             </ListItem>
@@ -41,7 +41,7 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://www.facebook.com/generEOS" target="new" className={block}>
+              <a href="https://www.facebook.com/generWBI" target="new" className={block}>
                 {'Facebook'}
               </a>
             </ListItem>
@@ -61,7 +61,7 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://t.me/generEOS" target="new" className={block}>
+              <a href="https://t.me/generWBI" target="new" className={block}>
                 {'Telegram'}
               </a>
             </ListItem>
@@ -72,7 +72,7 @@ function Footer({ ...props }) {
           <a href="https://www.genereos.io" target="new" className={anchor}>
             {'GenerEOS'}
           </a>
-          {', made with love for the EOS Community'}
+          {', made with love for the WBI Community'}
         </p>
       </div>
     </footer>

@@ -27,12 +27,12 @@ const FormData = [
   },
   {
     id: 'cpu',
-    label: 'CPU Stake (in EOS)',
+    label: 'CPU Stake (in WBI)',
     placeholder: 'Required to process transactions',
   },
   {
     id: 'net',
-    label: 'Net Stake (in EOS)',
+    label: 'Net Stake (in WBI)',
     placeholder: 'Required to use network',
   },
   {

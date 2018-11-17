@@ -16,7 +16,7 @@ function* getCurrency(token, name) {
     });
     return currencies;
   } catch (err) {
-    console.error('An EOSToolkit error occured - see details below:');
+    console.error('An WorbliToolkit error occured - see details below:');
     console.error(err);
     return [];
   }
@@ -39,14 +39,14 @@ function* getAccountDetail(name) {
       balances,
     };
   } catch (err) {
-    console.error('An EOSToolkit error occured - see details below:');
+    console.error('An WorbliToolkit error occured - see details below:');
     console.error(err);
     return {};
   }
 }
 
 //
-// Get the EOS all accounts by public key
+// Get the WBI all accounts by public key
 //
 function* performSearchPubkey() {
   const networkReader = yield select(makeSelectReader());
@@ -62,7 +62,7 @@ function* performSearchPubkey() {
     const accounts = yield join(...details);
     yield put(lookupLoaded(accounts));
   } catch (err) {
-    console.error('An EOSToolkit error occured - see details below:');
+    console.error('An WorbliToolkit error occured - see details below:');
     console.error(err);
     yield put(lookupLoaded([{}]));
   }
@@ -73,7 +73,7 @@ function* watchSeachPubkey() {
 }
 
 //
-// Get the EOS single account
+// Get the WBI single account
 //
 function* performSearchAccount() {
   const accountName = yield select(makeSelectSearchName());
@@ -82,7 +82,7 @@ function* performSearchAccount() {
     const account = yield call(getAccountDetail, accountName);
     yield put(lookupLoaded([account]));
   } catch (err) {
-    console.error('An EOSToolkit error occured - see details below:');
+    console.error('An WorbliToolkit error occured - see details below:');
     console.error(err);
     yield put(lookupLoaded([]));
   }

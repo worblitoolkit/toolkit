@@ -98,7 +98,7 @@ const ForumPostForm = props => {
       </ToolSection>
       <ToolSection lg={4}>
         <ToolBody color="info" header="Tutorial">
-          <h5>EOSIO Forum Post</h5>
+          <h5>WBIIO Forum Post</h5>
           <p>This is part of the eosio.forum Referendum project.</p>
           <p>You can create a forum post, and reply to other posts.</p>
           <p>

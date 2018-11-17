@@ -14,19 +14,19 @@ import ToolBody from 'components/Tool/ToolBody';
 
 import FormObject from './FormObject';
 
-const makeTransaction = (values, isEOS) => {
-  const type = isEOS
+const makeTransaction = (values, isWBI) => {
+  const type = isWBI
     ? {
       quant: `${Number(values.eosQuantity)
           .toFixed(4)
-          .toString()} EOS`,
+          .toString()} WBI`,
     }
     : { bytes: Number(values.byteQuantity) };
 
   const transaction = [
     {
       account: 'eosio',
-      name: isEOS ? 'buyram' : 'buyrambytes',
+      name: isWBI ? 'buyram' : 'buyrambytes',
       data: {
         payer: values.owner,
         receiver: values.name,
@@ -37,7 +37,7 @@ const makeTransaction = (values, isEOS) => {
   return transaction;
 };
 
-const validationSchema = ({ unit: { isEOS } }) => {
+const validationSchema = ({ unit: { isWBI } }) => {
   const eosQuantity = Yup.number().positive('You must pay a positive quantity');
   const byteQuantity = Yup.number()
     .positive('RAM must be a positive quantity')
@@ -46,8 +46,8 @@ const validationSchema = ({ unit: { isEOS } }) => {
   return Yup.object().shape({
     owner: Yup.string().required('Payer name is required'),
     name: Yup.string().required('Account name is required'),
-    byteQuantity: isEOS ? byteQuantity : byteQuantity.required('RAM purchase is required'),
-    eosQuantity: !isEOS ? eosQuantity : eosQuantity.required('RAM purchase is required'),
+    byteQuantity: isWBI ? byteQuantity : byteQuantity.required('RAM purchase is required'),
+    eosQuantity: !isWBI ? eosQuantity : eosQuantity.required('RAM purchase is required'),
   });
 };
 
@@ -62,22 +62,22 @@ const BuyRamForm = props => {
 const enhance = compose(
   withStateHandlers(
     {
-      isEOS: true,
+      isWBI: true,
     },
     {
       handleByteUnitChange: () => () => ({
-        isEOS: false,
+        isWBI: false,
       }),
-      handleEOSUnitChange: () => () => ({
-        isEOS: true,
+      handleWBIUnitChange: () => () => ({
+        isWBI: true,
       }),
     }
   ),
-  mapProps(({ isEOS, handleByteUnitChange, handleEOSUnitChange, ...otherProps }) => ({
+  mapProps(({ isWBI, handleByteUnitChange, handleWBIUnitChange, ...otherProps }) => ({
     unit: {
-      isEOS,
+      isWBI,
       handleByteUnitChange,
-      handleEOSUnitChange,
+      handleWBIUnitChange,
     },
     ...otherProps,
   })),
@@ -85,10 +85,10 @@ const enhance = compose(
     handleSubmit: (values, { props, setSubmitting }) => {
       const {
         pushTransaction,
-        unit: { isEOS },
+        unit: { isWBI },
       } = props;
       setSubmitting(false);
-      const transaction = makeTransaction(values, isEOS);
+      const transaction = makeTransaction(values, isWBI);
       setSubmitting(false);
       pushTransaction(transaction,props.history);
     },
@@ -96,7 +96,7 @@ const enhance = compose(
       byteQuantity: 8192,
       owner: props.networkIdentity ? props.networkIdentity.name : '',
       eosQuantity: 1,
-      isEOS: props.unit.isEOS,
+      isWBI: props.unit.isWBI,
       name: '',
     }),
     validationSchema,

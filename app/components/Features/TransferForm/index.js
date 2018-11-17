@@ -86,7 +86,7 @@ const enhance = compose(
     mapPropsToValues: props => ({
       owner: props.networkIdentity ? props.networkIdentity.name : '',
       name: '',
-      symbol: 'EOS',
+      symbol: 'WBI',
       quantity: '0',
       memo: '',
     }),

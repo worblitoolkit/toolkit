@@ -31,10 +31,10 @@ const Governance = () => {
       </p>
       <h4>Article V - No Fiduciary</h4>
       <p>
-        No Member nor EOS token holder shall have fiduciary responsibility to support the value of the EOS token. The
-        Members do not authorize anyone to hold assets, borrow, nor contract on behalf of EOS token holders
+        No Member nor WBI token holder shall have fiduciary responsibility to support the value of the WBI token. The
+        Members do not authorize anyone to hold assets, borrow, nor contract on behalf of WBI token holders
         collectively. This blockchain has no owners, managers or fiduciaries; therefore, no Member shall have beneficial
-        interest in more than 10% of the EOS token supply.
+        interest in more than 10% of the WBI token supply.
       </p>
       <h4>Article VI - Restitution</h4>
       <p>
@@ -56,7 +56,7 @@ const Governance = () => {
       <h4>Article IX - Dispute Resolution</h4>
       <p>
         All disputes arising out of or in connection with this Constitution shall be finally settled under the Rules of
-        Dispute Resolution of the EOS Core Arbitration Forum by one or more arbitrators appointed in accordance with the
+        Dispute Resolution of the WBI Core Arbitration Forum by one or more arbitrators appointed in accordance with the
         said Rules.
       </p>
       <h4>Article X - Choice of Law</h4>

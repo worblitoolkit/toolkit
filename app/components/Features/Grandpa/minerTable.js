@@ -47,7 +47,7 @@ const MinerTable = props => {
             <TableBody>
               <TableRow className={classes.tableRowHover}>
                 <TableCell className={classes.tableCell}><h3>Jackpot</h3></TableCell>
-                <TableCell className={classes.tableCell}><h3>{`${Number(round ? round.rewards.jackpot/10000 : 0).toFixed(4)} EOS`}</h3></TableCell>
+                <TableCell className={classes.tableCell}><h3>{`${Number(round ? round.rewards.jackpot/10000 : 0).toFixed(4)} WBI`}</h3></TableCell>
               </TableRow>
               <TableRow className={`${classes.tableStripedRow} ${classes.tableRowHover}`}>
                 <TableCell className={classes.tableCell}>Chief Miner</TableCell>
@@ -55,7 +55,7 @@ const MinerTable = props => {
               </TableRow>
               <TableRow className={classes.tableRowHover}>
                 <TableCell className={classes.tableCell}>Usurp Fee</TableCell>
-                <TableCell className={classes.tableCell}><h4>{round ? `${(Number(round.current_fee.split(' ')[0])*1.25).toFixed(4)} EOS` : 'Loading'}</h4></TableCell>
+                <TableCell className={classes.tableCell}><h4>{round ? `${(Number(round.current_fee.split(' ')[0])*1.25).toFixed(4)} WBI` : 'Loading'}</h4></TableCell>
               </TableRow>
               <TableRow className={`${classes.tableStripedRow} ${classes.tableRowHover}`}>
                 <TableCell className={classes.tableCell}>Miner changed on</TableCell>
@@ -63,15 +63,15 @@ const MinerTable = props => {
               </TableRow>
               <TableRow className={`${classes.tableRowHover}`}>
                 <TableCell className={classes.tableCell}>Team Dividend</TableCell>
-                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.team_div/10000 : 0).toFixed(4)} EOS`}</TableCell>
+                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.team_div/10000 : 0).toFixed(4)} WBI`}</TableCell>
               </TableRow>
               <TableRow className={`${classes.tableStripedRow} ${classes.tableRowHover}`}>
                 <TableCell className={classes.tableCell}>Carry Forward</TableCell>
-                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.carry_forward/10000 : 0).toFixed(4)} EOS`}</TableCell>
+                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.carry_forward/10000 : 0).toFixed(4)} WBI`}</TableCell>
               </TableRow>
               <TableRow className={`${classes.tableRowHover}`}>
                 <TableCell className={classes.tableCell}>Developer Fund</TableCell>
-                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.dev_fund/10000 : 0).toFixed(4)} EOS`}</TableCell>
+                <TableCell className={classes.tableCell}>{`${Number(round ? round.rewards.dev_fund/10000 : 0).toFixed(4)} WBI`}</TableCell>
               </TableRow>
             </TableBody>
           </Table>

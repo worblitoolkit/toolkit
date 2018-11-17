@@ -29,7 +29,7 @@ function* getProxies() {
     });
     yield put(fetchedProxies(proxies));
   } catch (err) {
-    console.error('An EOSToolkit error occured - see details below:');
+    console.error('An WorbliToolkit error occured - see details below:');
     console.error(err);
   }
 }

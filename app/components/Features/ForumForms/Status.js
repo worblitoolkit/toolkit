@@ -74,7 +74,7 @@ const ForumStatusForm = props => {
       </ToolSection>
       <ToolSection lg={4}>
         <ToolBody color="info" header="Tutorial">
-          <h5>EOSIO Forum Status</h5>
+          <h5>WBIIO Forum Status</h5>
           <p>This is part of the eosio.forum Referendum project.</p>
           <p>You can post a short, twitter like status</p>
           <p>

@@ -26,7 +26,7 @@ const FormData = [
 
 const eosInput = {
   id: 'eosQuantity',
-  label: `Ram purchase (in ${units.EOS})`,
+  label: `Ram purchase (in ${units.WBI})`,
   placeholder: 'How much RAM to puchase',
 };
 
@@ -39,7 +39,7 @@ const byteInput = {
 const FormObject = props => {
   const { values, touched, errors, handleChange, handleBlur, handleSubmit, ...toggleProps } = props;
   const {
-    unit: { isEOS, handleByteUnitChange, handleEOSUnitChange },
+    unit: { isWBI, handleByteUnitChange, handleWBIUnitChange },
     classes,
   } = toggleProps;
 
@@ -56,15 +56,15 @@ const FormObject = props => {
       <GridItem className={classes.radioContainer} xs={12} sm={12} md={6}>
         <span className={classes.radioLabel}>Purchase unit:</span>
         <FormControlLabel
-          control={<Radio checked={isEOS} color="primary" onChange={handleEOSUnitChange} />}
-          label="EOS"
+          control={<Radio checked={isWBI} color="primary" onChange={handleWBIUnitChange} />}
+          label="WBI"
         />
         <FormControlLabel
-          control={<Radio checked={!isEOS} color="primary" onChange={handleByteUnitChange} />}
+          control={<Radio checked={!isWBI} color="primary" onChange={handleByteUnitChange} />}
           label="bytes"
         />
       </GridItem>
-      {isEOS ? <ToolInput {...eosInput} {...props} /> : <ToolInput {...byteInput} {...props} />}
+      {isWBI ? <ToolInput {...eosInput} {...props} /> : <ToolInput {...byteInput} {...props} />}
     </ToolForm>
   );
 };

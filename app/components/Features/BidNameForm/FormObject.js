@@ -20,7 +20,7 @@ const FormData = [
   },
   {
     id: 'bid',
-    label: 'Bid (in EOS)',
+    label: 'Bid (in WBI)',
     placeholder: 'Must be 10% greater than last bid',
   },
 ];

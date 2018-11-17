@@ -52,7 +52,7 @@ const Grandpa = props => {
           color="info"
           icon={Info}
           header="GrandpaCoins"
-          subheader=" - Grandfathered coins fighting for supremecy on EOS">
+          subheader=" - Grandfathered coins fighting for supremecy on WBI">
           <GrandpaInfo/>
           <h5>Your referral link: <a href={refLink} target="new">{refLink}</a></h5>
         </ToolBody>

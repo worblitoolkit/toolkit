@@ -12,11 +12,11 @@ const RegProxy = () => {
       <h5>Unregister Proxy Info</h5>
       <p>If you had previously registered your Proxy Info, please unregister to keep the proxy database clean.</p>
       <p>
-        This is an on-chain EOS contract (or dApp) that allows EOS proxy accounts to register additional information
-        about themselves, such as name and website. This information is published on the EOS blockchain and freely
+        This is an on-chain WBI contract (or dApp) that allows WBI proxy accounts to register additional information
+        about themselves, such as name and website. This information is published on the WBI blockchain and freely
         available to be republished. An example website that uses this information is the{' '}
         <a href="https://www.alohaeos.com/vote/proxy" target="new">
-          Aloha EOS Proxy Research Portal
+          Aloha WBI Proxy Research Portal
         </a>.
       </p>
       <p>
@@ -24,8 +24,8 @@ const RegProxy = () => {
         <a href="https://bloks.io/account/regproxyinfo" target="new">
           regproxyinfo
         </a>{' '}
-        account on the EOS mainnet. More information about this project can be found on{' '}
-        <a href="https://github.com/AlohaEOS/eos-proxyinfo" target="new">
+        account on the WBI mainnet. More information about this project can be found on{' '}
+        <a href="https://github.com/AlohaWBI/eos-proxyinfo" target="new">
           GitHub
         </a>
       </p>
